@@ -1,6 +1,6 @@
 <div data-role="header">
-  <h1>CHUKKA</h1>
-  <%= link_to "Add", new_post_path, "data-icon" => "plus", "class" => "ui-btn-right" %>
+  <h1>CHUKKA - MOBILE</h1>
+  <%#= link_to "Add", new_post_path, "data-icon" => "plus", "class" => "ui-btn-right" %>
 </div>
  
 <div data-role="content">
@@ -8,7 +8,7 @@
     <% @posts.each do |post| %>
     <li>
       <%= link_to post.title, post %>
-      <%= link_to 'edit post', edit_post_path(post), "data-icon" => "gear" %>
+      <%#= link_to 'edit post', edit_post_path(post), "data-icon" => "gear" %>
     </li>
     <% end %>
   </ul>
