@@ -1,4 +1,6 @@
 Chukka::Application.routes.draw do
+  resources :excursions
+
   get "tours/show"
 
   resources :posts
