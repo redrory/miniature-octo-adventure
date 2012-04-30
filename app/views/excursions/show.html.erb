@@ -9,10 +9,10 @@
   <%= @excursion.content.html_safe %>
 
 
+  <div id = "excursion_photo"> <%=image_tag(@excursion.photo, :size => "250x250" )%> </div>
 
-  <p> Location of your CHUKKA tours <%= @excursion.location %> </p>
 
-  <p><%= @excursion.area %> </p>
+  <p> Located at our <%= @excursion.location %> in <%= @excursion.area %></p>
 
 </div>
 
