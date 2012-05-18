@@ -5,8 +5,8 @@ Chukka::Application.routes.draw do
 
   root :to => 'posts#index'
 
-  get "tours/show"
-  get "tours/jamaica"
+
+
   match "tours" => "tours#show"
   match "jamaica" => "tours#jamaica"
 end
