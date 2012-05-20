@@ -23,7 +23,6 @@ class ExcursionsController < ApplicationController
 
   def show_tours
     #@excursions = Excursion.all
-    @excursions = Excursion.where(area: "Montego Bay")
     @mobay = Excursion.mobay
 
     respond_to do |format|
