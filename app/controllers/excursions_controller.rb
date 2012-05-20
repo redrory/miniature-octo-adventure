@@ -21,6 +21,15 @@ class ExcursionsController < ApplicationController
     end
   end
 
+  def show_tours
+    @excursions = Excursion.all
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @excursion }
+    end
+  end
+
   # GET /excursions/new
   # GET /excursions/new.json
   def new
