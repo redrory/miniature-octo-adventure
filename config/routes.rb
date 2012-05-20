@@ -3,10 +3,10 @@ Chukka::Application.routes.draw do
   resources :posts
   resources :tours
 
+  get "tours/show"
+
   root :to => 'posts#index'
-
-
-
+	
   match "tours" => "tours#show"
   match "jamaica" => "tours#jamaica"
   match "show_tours" => "excursions#show_tours"

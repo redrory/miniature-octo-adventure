@@ -7,9 +7,9 @@
 <div data-role="content">
 	<ul data-role="listview">
 		<% @excursions.each do |excursion| %>
-			<li> <%=link_to excursion.name, excursion.id %></li>
+			<li> <%=link_to excursion.name, excursion_path(excursion.id) %></li>
 
-			<a href ="excursions/<%=excursion.id%>"> GAZA </a>
+			<!-- <a href ="excursions/<%=excursion.id%>"> GAZA </a> -->
 		<% end %>
 	</ul>
 </div>
