@@ -22,7 +22,8 @@ class ExcursionsController < ApplicationController
   end
 
   def show_tours
-    @excursions = Excursion.all
+    #@excursions = Excursion.all
+    @excursions = Excursion.where(area: "Montego Bay")
 
     respond_to do |format|
       format.html # show.html.erb
