@@ -6,7 +6,7 @@
  
 <div data-role="content">
 	<ul data-role="listview">
-		<% @excursions.each do |excursion| %>
+		<% @mobay.each do |excursion| %>
 			<li> <%=link_to excursion.name, excursion_path(excursion.id) %></li>
 
 			<!-- <a href ="excursions/<%=excursion.id%>"> GAZA </a> -->
