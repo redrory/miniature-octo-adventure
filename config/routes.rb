@@ -1,7 +1,10 @@
 Chukka::Application.routes.draw do
+  get "customers/create"
+
   resources :excursions
   resources :posts
   resources :tours
+  resources :customers
 
   get "tours/show"
 
