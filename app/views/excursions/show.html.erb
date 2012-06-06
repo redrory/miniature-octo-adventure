@@ -12,8 +12,8 @@
 	<p>I'm interested in doing this tour on _date_ please send me more info my is _email_</p>
 	
 	<%= form_for @customer do |c| %>
-		<%#= c.date_select :tour_date, :prefix => :start_date %>
-		<%= c.text_field :tour_date%>
+		<%= date_select :tour_date,:prefix => :start_date %>
+		<%#= c.text_field :tour_date%>
 		<%= c.email_field :email %>
 		<%= c.submit %>
 	<% end %>
