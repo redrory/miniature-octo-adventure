@@ -11,13 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120522020657) do
+ActiveRecord::Schema.define(:version => 20120608195045) do
 
   create_table "customers", :force => true do |t|
     t.string   "email"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.date     "tour_date"
+    t.datetime "tour_date"
   end
 
   create_table "excursions", :force => true do |t|
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20120522020657) do
     t.string   "area"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "price"
   end
 
   create_table "posts", :force => true do |t|
