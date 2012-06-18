@@ -25,12 +25,24 @@ class ExcursionsController < ApplicationController
   def active_tours
     #@excursions = Excursion.all
     @excursions = Excursion.active
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @mobay }
     end
   end
+
+  def cultural_tours
+    #@excursions = Excursion.all
+    @excursions = Excursion.culture
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @mobay }
+    end
+  end
+
+
 
   def show_tours
     #@excursions = Excursion.all

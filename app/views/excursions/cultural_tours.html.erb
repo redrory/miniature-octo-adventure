@@ -1,0 +1,18 @@
+<div data-role="header" data-add-back-btn="true">
+<h1>CHUKKA's <%=@excursions.first.tour_type %> Tours </h1>
+  <%= link_to 'Home', posts_url, "class" => "ui-btn-right" %>
+ 
+</div>
+ 
+<div data-role="content">
+	<ul data-role="listview">
+		<% @excursions.each do |excursion| %>
+			<li> <%=link_to excursion.name, excursion_path(excursion.id) %></li>
+
+			<!-- <a href ="excursions/<%=excursion.id%>"> GAZA </a> -->
+		<% end %>
+	</ul>
+</div>
+
+
+
