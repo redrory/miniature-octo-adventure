@@ -12,8 +12,10 @@ Chukka::Application.routes.draw do
 	
   match "tours" => "tours#show"
   match "jamaica" => "tours#jamaica"
+  match "active" => "excursions#active_tours"
   match "mobay_tours" => "excursions#mobay_tours"
   match "ochi_tours" => "excursions#ochi_tours"
   match "falmouth_tours" => "excursions#falmouth_tours"
+  match "active_tours" => "excursions#active_tours"
 
 end
