@@ -6,6 +6,14 @@
 <div data-role="content">
   <ul data-role="listview">
 
+    <div id = "slider">
+      <ul>
+        <li style = 'display:block'>Test One</li>
+        <li style = 'display:none'>Test Two</li>
+        <li style = 'display:none'>Test Three</li>
+      </ul>
+    </div>
+
     <li>
       <%= link_to "Tours", tours_show_path %>
     </li>
@@ -19,3 +27,18 @@
     <% end %>
   </ul>
 </div>
+
+<script type="text/javascript">
+window.mySwipe = new Swipe(document.getElementById('slider'), {
+    startSlide: 2,
+    speed: 400,
+    auto: 3000,
+    callback: function(event, index, elem) {
+
+      // do something cool
+
+    }
+});
+
+</script>
+
