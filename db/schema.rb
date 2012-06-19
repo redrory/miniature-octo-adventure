@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120618200306) do
+ActiveRecord::Schema.define(:version => 20120619192948) do
 
   create_table "customers", :force => true do |t|
     t.string   "email"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20120618200306) do
     t.datetime "updated_at", :null => false
     t.datetime "tour_date"
     t.integer  "price"
+    t.string   "tour_name"
   end
 
   create_table "excursions", :force => true do |t|
