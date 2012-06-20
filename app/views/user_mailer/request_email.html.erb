@@ -4,14 +4,12 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
   <body>
-    <h1>Welcome to example.com, <%#= @user.name %></h1>
+    <h1>Mobile Tour Request </h1>
     <p>
-      You have successfully signed up to example.com,
-      your username is: <%#= @user.login %>.<br/>
+        <b>Tour Requested : </b> <%= @customer.tour_name %><br/>
+        <b>Tour Date Requested : </b> <%= @customer.tour_date %><br/>
+        <b>Client's email : </b> <%= @customer.email %><br/>
     </p>
-    <p>
-      To login to the site, just follow this link: <%#= @url %>.
-    </p>
-    <p>Thanks for joining and have a great day!</p>
+    <p><small>Request made at <%= @customer.created_at%></small></p>
   </body>
 </html>

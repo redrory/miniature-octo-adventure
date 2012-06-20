@@ -1,9 +1,10 @@
 class UserMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "ebiz@chukkacaribbean.com"
 
-  def request_email
+  def request_email(customer)
+  	@customer = customer
   	marketing_admin = "rwalker@chukkacaribbean.com"
-  	mail(:to => marketing_admin, :subject => "Tour Request made")
+  	mail(:to => marketing_admin, :subject => "#{customer.tour_name} | Request made")
   end
-  
+
 end
