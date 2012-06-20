@@ -8,9 +8,9 @@
 
     <div id = "slider">
       <ul>
-        <li style = 'display:block'>Test One</li>
-        <li style = 'display:none'>Test Two</li>
-        <li style = 'display:none'>Test Three</li>
+        <li style = 'display:block'><img src="http://placehold.it/200x100"></li>
+        <li style = 'display:none'><img src="http://placehold.it/200x100"></li>
+        <li style = 'display:none'><img src="http://placehold.it/200x100"></li>
       </ul>
     </div>
 
@@ -30,8 +30,8 @@
 
 <script type="text/javascript">
 window.mySwipe = new Swipe(document.getElementById('slider'), {
-    startSlide: 2,
-    speed: 400,
+    startSlide: 0,
+    speed: 2000,
     auto: 3000,
     callback: function(event, index, elem) {
 
