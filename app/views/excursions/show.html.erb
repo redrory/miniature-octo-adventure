@@ -1,4 +1,6 @@
-
+<div class="ui-bar ui-bar-b">
+	<h4 style= "text-align:center;" ><%= @excursion.name%></h4>
+</div>
  <div data-role="content">
 	<%= @excursion.content.html_safe %>
 	<div id = "excursion_photo"> <%=image_tag(@excursion.photo, :size => "250x250" )%> </div>
