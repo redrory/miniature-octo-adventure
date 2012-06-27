@@ -18,7 +18,7 @@
 
     <li>
       <%= link_to post.title, post %>
-      <%= link_to 'edit post', edit_post_path(post), "data-icon" => "gear" %>
+      <%#= link_to 'edit post', edit_post_path(post), "data-icon" => "gear" %>
     </li>
     <% end %>
   </ul>
@@ -27,8 +27,8 @@
 <script type="text/javascript">
 window.mySwipe = new Swipe(document.getElementById('slider'), {
     startSlide: 0,
-    speed: 2000,
-    auto: 3000,
+    speed: 2500,
+    auto: 3500,
     callback: function(event, index, elem) {
 
       // do something cool
