@@ -13,6 +13,8 @@ class ExcursionsController < ApplicationController
   # GET /excursions/1
   # GET /excursions/1.json
   def show
+
+    @locations = Location.all 
     @customer = Customer.new
     @excursion = Excursion.find(params[:id])
 

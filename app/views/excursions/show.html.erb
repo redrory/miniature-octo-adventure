@@ -8,8 +8,12 @@
 	<p> Located at our <%= @excursion.location %> in <%= @excursion.area %></p>
 	<p>Request your tour date below</p>
 	
+	<%= @locations.inspect %>
+
 	<%= form_for @customer do |c| %>
 		<%= c.date_select :tour_date, :end_year => 2014, :start_year => 2012%>
+		<%= c.collection_select(:tour_name, @locations, :name , :name ) %>
+		<%#= c.text_field :tour_name , :placeholder => "Location will go here"%>
 		<%#= c.text_field :tour_date%>
 		<%= c.hidden_field :tour_name, :value => @excursion.name %>
 		<%= c.hidden_field :price, :value => @excursion.price %>
