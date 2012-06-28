@@ -1,5 +1,6 @@
 class Excursion < ActiveRecord::Base
-
+	has_many :assignments
+	has_many :locations, through: :assignments
 
 	scope :mobay, where(area: "Montego Bay")
 	scope :ochi, where(area: "Ocho Rios")

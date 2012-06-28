@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120627162353) do
+ActiveRecord::Schema.define(:version => 20120628163850) do
+
+  create_table "assignments", :force => true do |t|
+    t.integer "excursion_id"
+    t.integer "location_id"
+  end
+
+  add_index "assignments", ["excursion_id"], :name => "index_assignments_on_excursion_id"
+  add_index "assignments", ["location_id"], :name => "index_assignments_on_location_id"
 
   create_table "customers", :force => true do |t|
     t.string   "email"

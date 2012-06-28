@@ -15,6 +15,7 @@ class ExcursionsController < ApplicationController
   def show
 
     @locations = Location.all 
+    @tourlocate = Assignment.first
     @customer = Customer.new
     @excursion = Excursion.find(params[:id])
 
