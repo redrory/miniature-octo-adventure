@@ -15,7 +15,7 @@
 		<% if @excursion.locations.empty? %>
 			<%= "NO LOCATIONS ADDED YET" %>
 			<% else %>
-			<%= c.collection_select(:tour_name, @excursion.locations, :name , :name ) %>
+			<%= c.collection_select(:tour_location, @excursion.locations, :name , :name ) %>
 		<% end %>
 		<%#= c.text_field :tour_name , :placeholder => "Location will go here"%>
 		<%#= c.text_field :tour_date%>
