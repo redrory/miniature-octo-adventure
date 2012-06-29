@@ -18,13 +18,13 @@
 <body>
 	<div data-role = "page" data-add-back-btn="true">
 		<div data-role="header" style="background-color:#414141; background-image:none;height:15%;text-align:center">
+		<a href="/" class="ui-btn-right" data-icon="home" data-iconpos="notext" 
+           data-direction="reverse">Home</a> 
+			<%#=link_to(image_tag("http://chukkacaribbean.com/mobile/Chukka.White.png"), "http://google.com" )%>
 			<%= image_tag("http://chukkacaribbean.com/mobile/Chukka.White.png", :width => "50%" )%>
   		<%#= link_to "Add", new_post_path, "data-icon" => "plus", "class" => "ui-btn-right" %>
 		</div>
 		<%= yield %>
-
-
-
 	</div>
 </body>
 </html>
