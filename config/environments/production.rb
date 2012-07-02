@@ -22,11 +22,11 @@ Chukka::Application.configure do
 
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
-  :address              => "smtp.gmail.com",
+  :address              => "smtp.chukkacaribbean.com",
   :port                 => 587,
-  :domain               => 'www.gmail.com',
-  :user_name            => 'chukkasm@gmail.com',
-  :password             => 'Chukka$m',
+  :domain               => 'www.chukkacaribbean.com',
+  :user_name            => 'rwalker@chukkacaribbean.com',
+  :password             => 'Cca_web1',
   :authentication       => 'plain',
   :enable_starttls_auto => true  }
 
