@@ -5,22 +5,24 @@
 	<%= @excursion.content.html_safe %>
 	<div id = "excursion_photo"> <%=image_tag(@excursion.photo, :size => "250x250" )%> </div>
 
-	<p> Located at our <%= @excursion.location %> in <%= @excursion.area %></p>
-	<p>Request your tour date below</p>
+	<!-- <p> Located at our <%= @excursion.location %> in <%= @excursion.area %></p> -->
 	
 	<%#= @excursion.locations.inspect %>
 	<%= form_for @customer do |c| %>
+		<%= c.label :tour_date ," Enter the date of tour " %>
 		<%= c.date_select :tour_date, :end_year => 2014, :start_year => 2012%>
 		
 		<% if @excursion.locations.empty? %>
 			<%= "NO LOCATIONS ADDED YET" %>
-			<% else %>
+		<% else %>
+			<%=	c.label :tour_location, " Choose the tour location " %>
 			<%= c.collection_select(:tour_location, @excursion.locations, :name , :name ) %>
 		<% end %>
-		<%#= c.text_field :tour_name , :placeholder => "Location will go here"%>
-		<%#= c.text_field :tour_date%>
+
 		<%= c.hidden_field :tour_name, :value => @excursion.name %>
 		<%= c.hidden_field :price, :value => @excursion.price %>
+
+		<%=	c.label :tour_location, " Enter your email " %>
 		<%= c.email_field :email, :placeholder => "youremail@email.com" %>
 		<%= c.submit "Request Tour" %>
 	<% end %>
