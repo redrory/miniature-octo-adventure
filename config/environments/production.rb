@@ -24,9 +24,10 @@ config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
   :address              => "smtp.chukkacaribbean.com",
   :port                 => 587,
-  :domain               => 'www.chukkacaribbean.com',
-  :user_name            => 'rwalker@chukkacaribbean.com',
-  :password             => 'Cca_web1',
+  :domain               => 'mail.gmail.com',
+  :user_name            => 'chukkasm@gmail.com',
+  :password             => 'Chukka$m',
+
   :authentication       => 'plain',
   :enable_starttls_auto => true  }
 
