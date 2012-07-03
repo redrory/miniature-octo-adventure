@@ -27,7 +27,7 @@ config.action_mailer.smtp_settings = {
   :domain               => 'mail.gmail.com',
   :user_name            => 'chukkasm@gmail.com',
   :password             => 'Chukka$m',
-  :authentication       => 'plain',
+  :authentication       => 'login',
   :enable_starttls_auto => true  }
 
   # Defaults to Rails.root.join("public/assets")
