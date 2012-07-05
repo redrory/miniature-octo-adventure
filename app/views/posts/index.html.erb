@@ -1,34 +1,13 @@
 <div data-role="content">
   <ul data-role="listview">
-     
-  <!-- twitter --> 
-<a href="https://twitter.com/chukkacaribbean" class="twitter-follow-button" data-show-count="false">Follow @chukkacaribbean</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  <!-- end twitter -->
-
-    <!-- fb -->
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=221866394490331";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-  <!-- end fb -->
-
-    <div id = "slider">
-      <ul>
-        <li style = 'display:block'><a href="../excursions/19"><img src="http://chukkacaribbean.com/mobile/slider/small/Adv%20Pass.jpg", width="80%"></a></li>
-        <li style = 'display:none'><a href="../excursions/20"><img src="http://chukkacaribbean.com/mobile/slider/small//Her%20Pass.jpg", width="80%"></li></a>
-        <li style = 'display:none'><a href="http://www.tripadvisor.com/Attraction_Review-g147311-d657317-Reviews-Chukka_Caribbean_Adventures-Montego_Bay_Jamaica.html"><img src="http://chukkacaribbean.com/mobile/slider/small/tripExcellence.png", width="65%"></a></li>
-        
-      </ul>
-    </div>
-
-    
+         
+    <div id='slider' class='swipe'>
+  <div class='swipe-wrap'>
+    <div><a href="../excursions/19"><img src="http://chukkacaribbean.com/mobile/slider/small/Adv%20Pass.jpg", width="80%"></a></div>
+    <div><a href="../excursions/20"><img src="http://chukkacaribbean.com/mobile/slider/small/Her%20Pass.jpg", width="80%"></a></div>
+    <div><a href="http://tripadvisor.com/Attraction_Review-g147311-d657317-Reviews-Chukka_Caribbean_Adventures-Montego_Bay_Jamaica.html"><img src="http://chukkacaribbean.com/mobile/slider/small/tripExcellence.png", width="80%"></a></div>
+  </div>
+</div>
 
     <li>
       <%= link_to "Tours", tours_show_path %>
@@ -47,16 +26,18 @@
 </div>
 
 <script type="text/javascript">
-window.mySwipe = new Swipe(document.getElementById('slider'), {
-    startSlide: 0,
-    speed: 2500,
-    auto: 3500,
-    callback: function(event, index, elem) {
+window.mySwipe = new Swipe(document.getElementById('slider'),
 
-    // do something cool
+  {
+  startSlide: 0,
+  speed: 2500,
+  auto: 3000,
+  continuous: true,
+  disableScroll: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
 
-    }
-});
+  });
 
 </script>
 
