@@ -7,21 +7,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, 
   vertical-align:baseline;
   background:transparent;
 }
-
-.swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
-}
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.swipe-wrap div {
-  float:left;
-  width:100%;
-  position: relative;
-}
 body {
   -webkit-text-size-adjust:none;
   font-family:sans-serif;
@@ -73,5 +58,3 @@ a {
   border:1px solid;
   border-color:#CDD2D6 #BFC6CB #B3BBC1 #BFC6CB;
 }
-
-
