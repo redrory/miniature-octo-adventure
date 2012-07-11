@@ -38,7 +38,8 @@ config.action_mailer.delivery_method = :smtp
   :user_name            => 'rwalker@chukkacaribbean.com',
   :password             => 'Cca_web1',
   :authentication       => 'login',
-  :enable_starttls_auto => true  }
+  :enable_starttls_auto => true ,
+  :openssl_verify_mode  => 'none' }
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
