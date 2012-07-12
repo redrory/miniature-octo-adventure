@@ -21,14 +21,7 @@
 </head>
 <body>
 
-	<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=200073880121672";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	
 	<div data-role = "page" data-add-back-btn="true">
 		<div data-role="header" style="background-color:#414141; background-image:none;height:15%;text-align:center">
 		<a href="/" class="ui-btn-right" data-icon="home" data-iconpos="notext" 
@@ -36,7 +29,7 @@
 			<%#=link_to(image_tag("http://chukkacaribbean.com/mobile/Chukka.White.png"), "http://google.com" )%>
 			<%= image_tag("http://chukkacaribbean.com/mobile/Chukka.White.png", :width => "50%" )%>
 		</div>
-			
+			<div class="fb-like" data-href="http://facebook.com/chukkacaribbean" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 		<%= yield %>
 	</div>
 </body>
