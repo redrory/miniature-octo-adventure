@@ -29,7 +29,8 @@
 		<%= c.hidden_field :price, :value => @excursion.price %>
 
 		<%=	c.label :tour_location, " Enter your email " %>
-		<%= c.email_field :email, :placeholder => "youremail@email.com" %>
+
+		<%= c.email_field :email %>
 		<%= c.submit "Request Tour" %>
 	<% end %>
 
