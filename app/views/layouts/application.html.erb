@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chukka - Mobile |</title>
+  <title> CHUKKA Mobile </title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
  
  <%= stylesheet_link_tag "style"%>
+<<<<<<< HEAD
  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 <style>
 
@@ -31,12 +32,26 @@
 
  
   <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+=======
+
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" /> 
+ <%= stylesheet_link_tag "style", :media => "all" %>
+ <%= stylesheet_link_tag "application", :media => "all" %>
+
+ <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="http://modernizr.com/downloads/modernizr.js"></script>
+ <%= javascript_include_tag "swipe", :media => "all" %>
+  
+>>>>>>> master
   
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
   <%= javascript_include_tag "swipe"%>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+	
 	<div data-role = "page" data-add-back-btn="true">
 		<div data-role="header" style="background-color:#414141; background-image:none;height:15%;text-align:center">
 		<a href="/" class="ui-btn-right" data-icon="home" data-iconpos="notext" 
@@ -47,5 +62,19 @@
 			<div class="fb-like" data-href="http://facebook.com/chukkacaribbean" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 		<%= yield %>
 	</div>
+
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33357627-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
