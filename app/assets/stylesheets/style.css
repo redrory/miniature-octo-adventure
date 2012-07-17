@@ -58,11 +58,9 @@ a {
   border:1px solid;
   border-color:#CDD2D6 #BFC6CB #B3BBC1 #BFC6CB;
 }
-
 .swipe {
   overflow: hidden;
   visibility: hidden;
-  position: relative;
 }
 .swipe-wrap {
   overflow: hidden;

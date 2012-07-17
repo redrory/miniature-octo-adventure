@@ -4,12 +4,17 @@
   <div class='swipe-wrap'>
 
     <!-- <div><a href="http://tripadvisor.com/Attraction_Review-g147311-d657317-Reviews-Chukka_Caribbean_Adventures-Montego_Bay_Jamaica.html"><img src="http://chukkacaribbean.com/mobile/slider/tripExcellence.png" width="40%"></a></div> -->
+    
 
     <div ><a href="../excursions/19"><img src="http://chukkacaribbean.com/mobile/slider/Adv%20Pass.jpg" width="80%"></a></div>
 
     <div><a href="../excursions/20"><img src="http://chukkacaribbean.com/mobile/slider/Her%20Pass.jpg" width="80%"></a></div>
 
+    <div><a href="tripadvisor.com/Attraction_Review-g147311-d657317-Reviews-Chukka_Caribbean_Adventures-Montego_Bay_Jamaica.html"><img src="http://chukkacaribbean.com/mobile/slider/tripAdvisorLR.jpg" width="80%"></a></div>
+
     <div><a href="../posts/3"><img src="http://chukkacaribbean.com/mobile/slider/Kids.jpg" width="80%"></a></div>
+
+
   </div>
 </div>
 
@@ -33,17 +38,20 @@
 </div>
 
 <script type="text/javascript">
-  window.mySwipe = new Swipe(document.getElementById('slider'),
 
+$('#home').live('pageshow',function(){
+
+  window.slider = new Swipe(document.getElementById('slider'),
   {
-  startSlide: 0,
-  speed: 2500,
-  auto: 3000,
-  continuous: true,
-  disableScroll: false,
-  callback: function(index, elem) {},
-  transitionEnd: function(index, elem) {}
-
+    startSlide: 0,
+    speed: 3000,
+    auto: 4000,
+    continuous: true,
+    disableScroll: false,
+    callback: function(index, elem) {},
+    transitionEnd: function(index, elem) {}
+  }
+  );
   });
 
 
