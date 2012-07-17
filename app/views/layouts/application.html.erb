@@ -30,6 +30,10 @@
 			<%= image_tag("http://chukkacaribbean.com/mobile/Chukka.White.png", :width => "50%" )%>
 		</div>
 			<div class="fb-like" data-href="http://facebook.com/chukkacaribbean" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+			<% flash.each do |name, msg| %>
+				<div class = "ui-body ui-body-e"> <%= msg %></div>
+			<% end %>
+
 		<%= yield %>
 	</div>
 
