@@ -14,6 +14,7 @@
 	<!-- <p> Located at our <%= @excursion.location %> in <%= @excursion.area %></p> -->
 	
 	<%#= @excursion.locations.inspect %>
+	<p>Requests should be made <strong>48 hours</strong> before Tour Date.</p>
 	<%= form_for @customer do |c| %>
 		<%= c.label :tour_date ," Enter the date of tour " %>
 		<%= c.date_select :tour_date, :end_year => 2014, :start_year => 2012%>
